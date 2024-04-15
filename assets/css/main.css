@@ -1,0 +1,91 @@
+*::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  @apply bg-[#2C3E50] text-[#F9F9F9];
+}
+
+body {
+  margin : 0 !important;
+}
+
+.divider {
+  @apply w-[50vw] h-[10px] bg-[#00C58E] rounded-xl;
+}
+
+.accent {
+  @apply text-[#00C58E] font-bold
+}
+
+.main-page-container {
+  @apply w-screen h-screen flex items-center text-center;
+}
+
+.main-page-container .main-header {
+  @apply text-3xl font-bold text-[#F9F9F9] mt-8;
+
+}
+
+.main-page-container .aka-header {
+  @apply text-xl italic
+}
+
+.main-page-container .description {
+  @apply text-[#F9F9F9] justify-items-center my-2 w-[33vw] ;
+  @apply text-xl mx-auto
+}
+
+.main-page-container .avatar-container {
+  @apply w-[300px] h-[300px] rounded-full overflow-hidden;
+  @apply mx-auto border-solid border-8 border-[#00C58E]
+}
+
+.avatar-container .avatar {
+  @apply w-[300px] h-[300px] block;
+}
+
+.main-page-container .arrow {
+  @apply block w-[60px] mx-auto cursor-pointer;
+  transition : all .25s linear;
+}
+
+.main-page-container .arrow:hover {
+  transform : translateY(10px);
+}
+
+
+.contacts-container {
+    @apply w-screen text-center py-10;
+}
+
+.contacts-container .main-header {
+  @apply text-6xl font-bold text-[#F9F9F9];
+}
+
+.contacts-container .contacts {
+  @apply flex items-center p-4 rounded-full border-dashed border-8;
+  @apply border-[#F9F9F9] mx-auto w-fit mt-14 gap-10
+}
+
+.contacts .contact-icon {
+  @apply w-[100px] cursor-pointer;
+  position: relative;
+  display: inline-block;
+  animation: floatAnimation 3s infinite ease-in-out;
+}
+
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
